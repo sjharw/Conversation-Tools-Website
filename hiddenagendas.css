@@ -1,0 +1,183 @@
+ *{
+margin: 0;
+padding: 0;
+} 
+
+
+/* --- MAIN BODY --- */
+body {
+  background: linear-gradient(110deg, #ffca29 60%, #ffea2e 60%); /* background style */
+  background-attachment: fixed; /* background stays in fixed position */
+ }
+
+
+/* --- HEADER --- */
+header{
+    height:200px; /* space for header at top of page */
+   }
+   
+ /* title */
+   h1 {
+    color: #111; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 90px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1; 
+    text-align: center; 
+    padding-top: 20px;
+   }
+
+ /* intro */
+#undertitle{
+  color: #111;
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 55px; /* how far down text is under title */
+  text-align: center;
+ }
+ 
+
+
+/* --- SIDENAV --- */
+.sidenav {
+    height: 100%;
+    width: 0; /* So sidevan only shows when menu clicked */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 0px; /* how far cross is from first link */
+  }
+  
+  .sidenav a {
+    font-family: 'Helvetica Neue', sans-serif; 
+    color:#f5f5f0;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s; /* how quick menu links change colour when hovered over */
+  }
+  
+  #link{
+    padding: 40px 0px 40px 15px;
+    border-bottom: solid 1px lightgrey;
+    border-bottom-left-radius: 20px;
+    width: 95%;
+    font-size: 15px;
+  }
+  
+  #link:hover {   /* on mouse hover */
+    color: #c2c2a3;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    right: 5px;
+    font-size: 30px;
+  }
+  
+  #main {
+    transition: margin-left .2s;
+    padding: 26px;
+  } 
+/* --- END OF SIDENAV --- */
+
+
+
+/* --- FLEX BOXES --- */
+ /* The main contents container */
+#maincontent {
+  padding: 0px 100px 100px 100px; /* space around flex boxes */
+}
+
+ /* the outer flex container */
+#flexbox { 
+  display: flex; /* The outer flex container */
+  justify-content: center;  /* Centre the flexboxes */
+  flex-wrap: wrap; /* flexboxes move to new row automatically */
+  width: 100%;
+ }
+
+ /* the flex box containers */
+#parent{
+  flex: 0 30%; /* width of flexbox */
+  min-height:300px; /* set min height of flexbox */
+}
+
+.red {
+  background: orangered;
+}
+
+.blue {
+  background: steelblue;
+}
+
+.hotpink{
+ background:#f22645;
+}
+
+.purple{
+ background:purple;
+}
+
+.pink{
+  background:#DB7093;
+}
+
+.springgreen {
+background: #00FF7F;
+}
+
+.lightgreen{
+background: #3CB371;
+}
+
+.lightseagreen{
+background: #3333CC;
+}
+
+#flexbox > div {
+  padding: .70em;
+  color: white;
+}
+
+#flexbox > div > h2{
+  text-align: center;
+  font-size: 3.5vw;
+  font-family: Geneva;
+  padding-top: 110px; /* Centre text in middle of flexbox */
+}
+
+#flexbox > div > p{ 
+  margin: 10px 10px 10px 10px;
+  font-size:15px;
+  font-family: Geneva;
+}
+
+#hover-content {
+    display:none;
+}
+
+#parent:hover #hover-content {
+  display:block;
+}
+
+#parent:hover {
+transform: scale(1.2); /* on hover flexbox size increases*/
+fit-content(40%); /* make sure flexbox content fits the flexbox on hover */
+}
+
+#parent:hover h2{
+    display:none;
+}
+
+/* --- END OF FLEX BOXES --- */
+
