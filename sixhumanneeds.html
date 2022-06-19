@@ -1,43 +1,12 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html' %}
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="sixhumanneeds.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+  {% block header %}
+    <link rel="stylesheet" type="text/css" href="CSS/sixhumanneeds.css">
+  {% endblock header %}
       
-      
-      
-      
-      <!-- SLIDE OUT MENU -->
-      <span style="font-size:35px;cursor:pointer; color:black;" onclick="openNav()">&#9776; Menu</span> <!-- Menu button -->
-        <div id="mySidenav" class="sidenav">
-         <a id="cross" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a id ="link" href="sharedpool.html">Shared pool</a>
-          <a id ="link" href="safeenvironment.html">Safe environment</a>
-          <a id ="link" href="hiddenagendas.html">Hidden agendas</a>
-          <a id ="link" href="sixhumanneeds.html">Human needs</a>
-        </div>
-       <!-- END OF SLIDE OUT MENU -->
 
+      {% block content %}
 
-       <!-- HEADING -->
-       <div class="header">
-        <div class ="container">
-          <h1>Six human needs</h1>
-        </div>
-       </div>
-       <!-- END OF HEADING -->
-
-
-
-
-
-
-
-
-
-    <body>
  
             <!-- INTRO -->
          <p id="undertitle">
@@ -313,43 +282,14 @@
  <p style="text-align: right;">Info credit @ Anthony Robbins </p>
 
 
-</body>
-
-
-<script src="https://code.jquery.com/jquery-latest.min.js"></script> <!-- jQuery-->
-
-
-<script type="text/javascript">
-
-// HUMAN NEED TABS
-function openNeed(humanNeed) {
-  var i, tabcontent, boxes;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  boxes = document.getElementsByClassName("box");
-  for (i = 0; i < boxes.length; i++) {
-  }
-  document.getElementById(humanNeed).style.display = "block";
-}
-// Get the element with id="contribution" and click on it
-document.getElementById("contribution").click();
 
 
 
-// SIDENAV SLIDE OUT
-function openNav() {
-  document.getElementById("mySidenav").style.width = "200px"; <!-- Width of sidenav -->
-}
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+{% endblock content %}
 
 
-</script>
-
-
-
-</html>
+{% block javascript %}
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script> <!-- jQuery-->
+  <script src="{{url_for('static'.filename='sixhumanneeds.js')}}" type="text/javascript"></script>
+{% endblock javascript %}
