@@ -1,0 +1,7 @@
+# ignore virtual environment
+webapp
+
+# currently not working properly so ignoring it for now
+install.bat
+setup.py 
+view.py

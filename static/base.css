@@ -3,22 +3,6 @@
     padding: 0;
     box-sizing: border-box; /* box size stays same put contents shrink as padding added */
 } 
-    
-    
-/* --- MAIN BODY --- */
-body {
-    background-image: url("Images/sebackground.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%; 
-    overflow: scroll; /* stops background from moving when you click on accordion */
-    background-attachment: fixed;   
-    background-size: cover; /* Resize the background image to cover the entire container */
-    width:100%;
-    overflow-x: hidden; /* This stops a x axis scroll bar appearing */
-    min-height: 100%;
-    height: 100%;
-} 
 
 /* --- HEADER --- */
 header{
