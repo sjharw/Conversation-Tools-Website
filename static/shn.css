@@ -31,29 +31,7 @@ h2 {
  padding-top: 40px;
 }
 
-
-/* --- IMAGE --- */
-/* Save image with a invisible square shape behind so image is 1 x 1 not 1 x 2 or 2 x 1 etc */
-
-#imagecontainer{
-  padding: 3px; 
-  width: 70px;
-  height: 70px;
-  top: 0;
-  margin: 0 auto; /* align horizontally middle */
-}
-
- .img {
-  height: 100%;
-  background-position: center;
-  background-size: cover; /* Resize the background image to cover the entire container */
-  background-repeat: no-repeat;
-}
-
-
-
-/* --- BOXES --- */
-
+/* --- NEED BOXES --- */
 
 /* To evenly distribute boxes horizontally across page */
 .stretch {
@@ -63,7 +41,8 @@ h2 {
     line-height: 0;
 }
 
-.box{
+.need-box {
+  text-align: center;
   border: 12px solid #ff99ff;
   border-radius: 25px;
   -webkit-box-shadow: 0 8px 6px -6px black;
@@ -84,13 +63,64 @@ h2 {
   transition: top ease 0.5s;
 }
 
-
-/* Box moves downwards on hover */
-.box:hover {
+/* Need box moves downwards on hover */
+.need-box:hover {
   top: -10px;
 }
 
+/*Need box text */
+.need-box p {
+  margin-top: 10px;
+}
 
+/* Need box colours */
+#VaContent{
+  background-color: #e98074;
+}
+
+#CoContent {
+  background-color: #7491e9;
+}
+
+#CeContent {
+  background-color: #a8d166;
+}
+
+#LoContent {
+  background-color: #a574e9;
+}
+
+#SiContent {  
+  background-color: #74e984;
+}
+
+#GoContent{
+  background-color: #d6cd4b;
+}
+
+#VaContent{
+  background-color: #e98074;
+}
+
+
+
+/* --- IMAGE --- */
+.imagecontainer{
+  padding: 3px; 
+  width: 70px;
+  height: 70px;
+  top: 0;
+  margin: 0 auto; /* align horizontally middle */
+}
+
+ .img {
+  height: 100%;
+  background-position: center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-repeat: no-repeat;
+}
+
+/* Image colours */
 #love{
   background-color: #a574e9;
 }
@@ -178,95 +208,22 @@ h2 {
   transition: background-image 0.2s ease-in-out;   
 }
 
-
-.box p {
-  text-align: center;
-  color: black;
-  font-size: 20px;
-  margin: 10px;
-  padding: 0px;
-}
-
-/* --- Content under boxes --- */
-
-/* http://jsfiddle.net/bvgn46hu/1 */
-
-#content{
-  padding: 0px;
-  margin-top: 20px;
-}
-
 .tabcontent {
-    text-align:center;
-    padding: 30px;
-    font-family: 'Helvetica Neue', sans-serif; 
-    letter-spacing: 1px;
+  text-align:center;
+  padding: 30px;
+  font-family: 'Helvetica Neue', sans-serif; 
+  letter-spacing: 1px;
 }
 
-.tabcontent > div {  
-    width: 40%; 
-    display: inline-block;
-    vertical-align: top;   
-    text-align:center;
-    margin: 10px;    
-    padding: 0px;
-}
-
-#left {
-  margin-right: 90px;
-}
-
-#right{
-  margin-left: 90px;
-}
-
-
-.tabcontent > div > h2 {
+.tabcontent > h2 {
   font-size: 30px;
   text-align: center;
   color: white;
   padding-bottom: 5px;
 }
 
-.tabcontent > div > h3 {
+.tabcontent > div > div > h3 {
   font-size: 23px;
   color: white;
-  text-align:left;
   padding-bottom: 5px;
 }
-
-.tabcontent > div > p {
-    text-align:left;
-    padding: 2px;
-    font-weight: bold;
-    color: black;
-}
-
-#VaContent{
-  background-color: #e98074;
-}
-
-#CoContent {
-  background-color: #7491e9;
-}
-
-#CeContent {
-  background-color: #a8d166;
-}
-
-#LoContent {
-  background-color: #a574e9;
-}
-
-#SiContent {  
-  background-color: #74e984;
-}
-
-#GoContent{
-  background-color: #d6cd4b;
-}
-
-#VaContent{
-  background-color: #e98074;
-}
-

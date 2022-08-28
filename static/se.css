@@ -23,16 +23,7 @@ u {
 /* Bold text */
 strong { 
   font-weight: 900;
-  font-size: 20px;
 }
-
-h2 {
-  font-size: 25px;
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 10px 0px;
-  color: black;
-  font-weight: bold;
-  }
 
 /* Example box */
 #examplebox {
@@ -41,7 +32,6 @@ margin: 15px;
 }
 
 #example{
-font-size: 16px;
 padding:15px;
 }
 
@@ -49,33 +39,6 @@ padding:15px;
 border: 2px solid #cc3d6a;
 margin-top: 10px;
 padding: 10px;
-font-size: 17px;
-}
-
-/* Subtitles in accordion */
-h3 {
-font-size: 22px;
-padding-left: 5px;
-padding-top: 5px;
-padding-bottom: 5px;
-font-family: Arial Black;
-text-align: left;
-}
-
-h4 {
-color: black;
-text-decoration: underline;
-font-size: 20px;
-padding-left: 15px;
-padding-top: 14px;
-}
-
-p {
-font-size: 18px;
-padding: 1px 0px 1px 0px;
-color: black;
-font-weight: normal;
-margin: 5px 0px 0px 0px;
 }
 
 #listinlist {
@@ -83,24 +46,17 @@ padding: 0px 0px 0px 35px;
 }
 
 #listinlist li{
-font-size:17px;
 font-weight: normal;
 padding: 0px 0px 0px 0px;
 }
 
 ol {
-font-size: 20px;
 padding: 15px;
 font-weight:bold;
 margin: 0px 0px 0px 0px;
 }
 
-#biggerol{
-font-size: 23px;
-}
-
 #numbered{
-font-size: 18px;
 padding: 5px 0px 0px 0px;
 color: black;
 font-weight: normal;
@@ -108,7 +64,6 @@ margin: 5px 0px 0px 50px;
 }
 
 #numbered p{
-font-size: 18px;
 padding: 5px 0px 10px 0px;
 color: black;
 font-weight: normal;
@@ -116,7 +71,6 @@ margin: 0px 0px 0px 0px;
 }
 
 #bulletpoint li {
-font-size: 18px;
 padding: 0px 0px 0px 0px;
 color: black;
 font-weight: normal;
@@ -162,17 +116,6 @@ margin: 5px 0px 0px 50px;
 }
 
 /* --- Accodrion three ---*/
-/* -- Row container -- */
-#container1{
-  padding: 15px;
-  margin: 10px 0px 10px 0px;
-}
-
-#backgroundbubble{
-  background: #f03122;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* Silence violence box*/
 .column {
@@ -180,11 +123,7 @@ margin: 5px 0px 0px 50px;
   width: 46%;
 }
 
-#rowcontent{
-width: 100%;
-}
-
-#col1{
+#line-right{
   border-right: 7px solid #f03122;
   margin-right: 50px;
   padding-right: 40px;
@@ -209,13 +148,11 @@ box-shadow: 0px 0px 32px -12px rgba(0,0,0,0.75);
   }
 
 #boxtext{
-font-size: 18px;
 margin-left: 5px;
 }
 
 /* -- Accordion container and wrapper -- */
 #accordioncontainer{
-  font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px 10px 0px;
   width: 100%;
   height: 100%;
@@ -236,7 +173,6 @@ margin-left: 5px;
     float:left;
     display:block;
     width:100%;
-    font-family:'Open-sans',Arial,sans-serif;
 }
 
 .accordionItemHeading{
@@ -247,46 +183,46 @@ margin-left: 5px;
     color:#fff;
     width:100%;
     -webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
 
 .close .accordionItemContent{
     height:0px;
     transition:height 1s ease-out;
     -webkit-transform: scaleY(0);
-	-o-transform: scaleY(0);
-	-ms-transform: scaleY(0);
-	transform: scaleY(0);
+	  -o-transform: scaleY(0);
+	  -ms-transform: scaleY(0);
+	  transform: scaleY(0);
     float:left;
     display:block; 
 }
 
 .open .accordionItemContent{
-        padding: 20px;
+    padding: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
     width: 100%;
     margin: 0px 0px 10px 0px;
     display:block;
     -webkit-transform: scaleY(1);
-	-o-transform: scaleY(1);
-	-ms-transform: scaleY(1);
-	transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
     -webkit-transform-origin: top;
-	-o-transform-origin: top;
-	-ms-transform-origin: top;
-	transform-origin: top;
-	-webkit-transition: -webkit-transform 0.4s ease-out;
-	-o-transition: -o-transform 0.4s ease;
-	-ms-transition: -ms-transform 0.4s ease;
-	transition: transform 0.4s ease;
-        box-sizing: border-box;
+    -o-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -o-transition: -o-transform 0.4s ease;
+    -ms-transition: -ms-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    box-sizing: border-box;
 }
 
 .open .accordionItemHeading{
     margin:0px;
-        -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
     -webkit-border-top-right-radius: 3px;
     -moz-border-radius-topleft: 3px;
     -moz-border-radius-topright: 3px;
@@ -306,16 +242,8 @@ border-radius: 3px;
 
 
 /* --- LINE WIDGETS --- */
-/* https://stackoverflow.com/questions/41790586/draw-square-brackets-around-multi-line-text */
-#container2{
-margin:0 auto; /* this aligns container in centre of accordion */
-width: 90%;
-}
-
-h6{
+.bubbleword { 
   color: black;
-  font-size: 20px;
-  font-family: Comic Sans MS;
   border-radius: 23px;
   padding: 10px;
   margin-top: 10px;
@@ -324,22 +252,6 @@ h6{
   text-align: center;
   line-height: 20px; /* Make slighly less (20 less) then height */ 
   vertical-align: middle;
-}
-
-#left1{
- background: #1fbfa5;
-}
-
-
-#right1{
- margin-left: auto;
- background: #eb7626;
-}
-
-#left2{
- background: #cc3d6a; 
- clear: both; /*to stop float above interferring*/
- margin-top: 40px;
 }
 
 .box{
@@ -354,8 +266,6 @@ h6{
   clear: both; /* so it is on seperate line to floating elements below */
 }
 
-
-
 #box2{
   border-right: 7px solid #eb7626;
   margin-left: auto;
@@ -368,7 +278,6 @@ h6{
   border: 2px dashed #eb7626;
   margin-top: 40px;
   padding: 4px;
-  font-size: 16px;
   float: left;
   width: 40%; 
   display: inline-block;
@@ -380,34 +289,24 @@ h6{
  width: 70%;
 }
 
-#boxcontent{
+.boxcontent{
 padding-left: 15px;
 padding-right: 15px;
 line-height: 1.2em; /* White space between lines */
-font-size: 18px;
 }
 
 
-#CRIB {
-  font-size: 25px;
+.CRIB {
   font-weight: bold;
   color: #cc3d6a;
 }
 
-#CRIB::first-letter {
-  font-size: 35px;
-  color: #cc3d6a;
+.CRIB::first-letter {
   font-style: italic;
 }
 
-#CRIBtext p{
+.CRIBtext p{
   display: inline-block;
   margin-right: 8px; /* 4px is normal whitespace amount */
   font-weight: bold;
 }
-
-#CRIBtext{
-  margin: 0px;
-  padding:0px;
-}
-

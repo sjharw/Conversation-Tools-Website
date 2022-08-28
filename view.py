@@ -20,6 +20,12 @@ app = Flask(__name__)
 
 @app.route("/")
 
+@app.route("/home")
+def home():
+    """
+    home
+    """
+    return render_template("/home.html")
 
 @app.route("/se")
 def se():
@@ -28,6 +34,7 @@ def se():
     """
     return render_template("/safeenvironment.html")
 
+
 @app.route("/shn")
 def shn():
     """
@@ -35,12 +42,14 @@ def shn():
     """
     return render_template("/sixhumanneeds.html")
 
+
 @app.route("/sp")
 def sp():
     """
     sp
     """
     return render_template("/sharedpool.html")
+
 
 @app.route("/ha")
 def ha():
@@ -50,17 +59,7 @@ def ha():
     return render_template("/hiddenagendas.html")
 
 
-
 # run app
 if __name__ == "__main__":
-    port = int (
-        os.environ.get(
-            "PORT",
-            5000
-        )
-    )
-    app.run(
-        debug= True,
-        host= "0.0.0.0",
-        port= port
-    )
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=True, host="0.0.0.0", port=port)

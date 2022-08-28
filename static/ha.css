@@ -1,3 +1,9 @@
+/* --- BACKGROUND --- */
+body {
+  background: linear-gradient(110deg, #ffca29 60%, #ffea2e 60%); /* background style */
+  background-attachment: fixed; /* background stays in fixed position */
+ }
+
 /* --- FLEX BOXES --- */
  /* The main contents container */
 #maincontent {
@@ -5,85 +11,50 @@
 }
 
  /* the outer flex container */
-#flexbox { 
+.flexbox { 
   display: flex; /* The outer flex container */
   justify-content: center;  /* Centre the flexboxes */
   flex-wrap: wrap; /* flexboxes move to new row automatically */
   width: 100%;
  }
 
- /* the flex box containers */
-#parent{
-  flex: 0 30%; /* width of flexbox */
-  min-height:300px; /* set min height of flexbox */
-}
-
-.red {
-  background: orangered;
-}
-
-.blue {
-  background: steelblue;
-}
-
-.hotpink{
- background:#f22645;
-}
-
-.purple{
- background:purple;
-}
-
-.pink{
-  background:#DB7093;
-}
-
-.springgreen {
-background: #00FF7F;
-}
-
-.lightgreen{
-background: #3CB371;
-}
-
-.lightseagreen{
-background: #3333CC;
-}
-
-#flexbox > div {
+/* flexbox font styling */
+ .flexbox > div {
   padding: .70em;
   color: white;
 }
 
-#flexbox > div > h2{
+.flexbox > div > h2{ 
   text-align: center;
-  font-size: 3.5vw;
-  font-family: Geneva;
   padding-top: 110px; /* Centre text in middle of flexbox */
 }
 
-#flexbox > div > p{ 
+.flexbox > div > p { 
   margin: 10px 10px 10px 10px;
-  font-size:15px;
-  font-family: Geneva;
+  font-size: 12px;
+}
+
+
+ /* the flex box containers */
+.parent{
+  flex: 0 30%; /* width of flexbox */
+  min-height:300px; /* set min height of flexbox */
 }
 
 #hover-content {
     display:none;
 }
 
-#parent:hover #hover-content {
+.parent:hover #hover-content {
   display:block;
 }
 
-#parent:hover {
+.parent:hover {
 transform: scale(1.2); /* on hover flexbox size increases*/
 fit-content(40%); /* make sure flexbox content fits the flexbox on hover */
 }
 
-#parent:hover h2{
+.parent:hover h2 {
     display:none;
 }
-
-/* --- END OF FLEX BOXES --- */
 

@@ -5,9 +5,9 @@
 } 
 
 /* --- HEADER --- */
-header{
+header {
     height:200px; /* space for header at top of page */
-   }
+}
    
 /* - Title - */
 h1 {
@@ -20,59 +20,3 @@ h1 {
     text-align: center; 
     padding-top: 20px;
 }
-
-/* --- SIDENAV --- */
-.sidenav {
-    height: 100%;
-    width: 0; /* So sidevan only shows when menu clicked */
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: black;
-    overflow-x: hidden;
-    transition: 1s;
-    padding-top: 0px; /* how far cross is from first link */
-  }
-  
-  .sidenav a {
-    font-family: 'Helvetica Neue', sans-serif; 
-    color:#f5f5f0;
-    text-decoration: none;
-    display: block;
-    transition: 0.5s; /* how quick menu links change colour when hovered over */
-  }
-
-  #nav-menu{
-    font-size:35px;
-    cursor:pointer; 
-    color:black;
-  }
-  
-  #link{
-    padding: 40px 0px 40px 15px;
-    border-bottom: solid 1px lightgrey;
-    border-bottom-left-radius: 20px;
-    width: 95%;
-    font-size: 15px;
-  }
-  
-  #link:hover {   /* on mouse hover */
-    color: #c2c2a3;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    right: 5px;
-    font-size: 30px;
-  }
-  
-  #main {
-    transition: margin-left .2s;
-    padding: 26px;
-  } 
-
