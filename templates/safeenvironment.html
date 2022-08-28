@@ -1,10 +1,6 @@
-{% extends 'base.html' %} 
-
-{% block header %}
+{% extends 'base.html' %} {% block header %}
 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='se.css')}}" />
-{% endblock header %} 
-
-{% block content %}
+{% endblock header %} {% block content %}
 <!-- Page title -->
 <div class="header">
     <h1>Safe Environment</h1>
@@ -14,8 +10,7 @@
 <p style="text-align: center;">
     A safe environment creates a space for people to openly share their thoughts without being on the defence/ attack.
 </p>
-<br>
-
+<br />
 
 <!--- ACCORDIONS (see https://codepen.io/sureshrkm/pen/ZbzBpr ) --->
 <div class="container" id="accordioncontainer">
@@ -23,7 +18,7 @@
         <!-- FIRST ACCORDION -->
         <div class="accordionItem open" data-accordion item>
             <!-- add close or open after accordionItem to start panel as opened or closed-->
-            <h2 class="accordionItemHeading">What is a safe environment?</h2>
+            <h4 class="accordionItemHeading">What is a safe environment?</h4>
             <div class="accordionItemContent">
                 <p>A safe environment is where people can freely share their opinions, feelings, values, and experiences. Dialogue is freely flowing.</p>
             </div>
@@ -31,7 +26,7 @@
 
         <!-- SECOND ACCORDION -->
         <div class="accordionItem close">
-            <h2 class="accordionItemHeading">How can you create a safe environment?</h2>
+            <h4 class="accordionItemHeading">How can you create a safe environment?</h4>
             <div class="accordionItemContent">
                 <p>To create a safe environment, you need two achieve things: mutual purpose and mutual respect</p>
                 <br />
@@ -122,158 +117,149 @@
 
         <!-- THIRD ACCORDION -->
         <div class="accordionItem close">
-            <h2 class="accordionItemHeading">How do you maintain a safe environment?</h2>
+            <h4 class="accordionItemHeading">How do you maintain a safe environment?</h4>
             <div class="accordionItemContent">
-                <ol type="1" id="biggerol">
-                    <li>Learn to look</li>
-                    <p>Look for issues with safety, when people feel unsafe they resort to two types of defence in response to the fear they feel.</p>
+                <!-- Item 1 -->
+                <h4>Learn to look</h4>
+                <p>Look for issues with safety, when people feel unsafe they resort to two types of defence in response to the fear they feel.</p>
+                <!-- Rows -->
+                <div class="row">
+                    <div class="column" id="line-right">
+                        <h6 class="bubbleword" style="background-color: red;">Silence</h6>
+                        <br />
+                        <p><b>Masking</b>- sarcasm and sugar coating</p>
+                        <p><b>Avoiding</b>- steering the attention away from the sensitive topic</p>
+                        <p><b>Withdrawing</b>- pulling out of the conversation altogether</p>
+                        <br />
+                    </div>
+                    <div class="column">
+                        <h6 class="bubbleword" style="background-color: red;">Violence</h6>
+                        <br />
+                        <p><b>Controlling</b>- cutting others off, speaking in absolutes, using hyperboles, and using directive questions</p>
+                        <p><b>Labelling</b>- name-calling</p>
+                        <p><b>Attacking</b>- threatening</p>
+                        <br />
+                    </div>
+                </div>
 
-                    <!-- Rows -->
-                    <div class="container" id="container1">
-                        <div class="row">
-                            <div class="column" id="col1">
-                                <h6 id="backgroundbubble">Silence</h6>
-                                <br />
-                                <p id="rowcontent"><b>Masking</b>- sarcasm and sugar coating</p>
-                                <p id="rowcontent"><b>Avoiding</b>- steering the attention away from the sensitive topic</p>
-                                <p id="rowcontent"><b>Withdrawing</b>- pulling out of the conversation altogether</p>
-                                <br />
-                            </div>
-                            <div class="column" id="col2">
-                                <h6 id="backgroundbubble">Violence</h6>
-                                <br />
-                                <p id="rowcontent"><b>Controlling</b>- cutting others off, speaking in absolutes, using hyperboles, and using directive questions</p>
-                                <p id="rowcontent"><b>Labelling</b>- name-calling</p>
-                                <p id="rowcontent"><b>Attacking</b>- threatening</p>
-                                <br />
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of rows -->
-                    <br />
-                    <br />
-                    <li>Make it safe</li>
-                </ol>
-                <!-- Start of widget container -->
-                <div class="w3-container" id="container2">
-                    <h6 id="left1">Apologise</h6>
-                    <div class="box" id="box1">
-                        <p id="boxcontent">
-                            <b>Apologize to take back your action that has offended them.</b> <br />
-                            Apologize sincerely if you have made a mistake that has hurt the other person. <br />
-                            When your behaviour has given someone clear cause to doubt your respect then the mutual respect will be lost. <br />
-                            You need to acknowledge your wrongdoing, give up winning, focus on what you really want, and give up a bit of your ego. <br />
-                            A sincere show of respect will help restore the mutual respect that has been lost. <br />
-                            Note that a 'but' after an apology isn't a genuine apology, by justifying/ excusing your actions you are displacing responsibility and being insincere. <br />
-                            <br />
-                            Apologizing is accepting your wrongdoing and taking back your actions, unlike contrasting which isn't used to take back what you have said or done but rather to clarify the meaning behind your words/ actions.
-                            <br />
-                        </p>
-                    </div>
-
-                    <h6 id="right1">Contrast</h6>
-                    <div style="overflow: hidden;">
-                        <div class="box" id="box2">
-                            <p id="boxcontent">
-                                <b>Contrast to fix the misunderstanding.</b> <br />
-                                Sometimes people will be offended or upset even though you haven't done anything to cause such offence. <br />
-                                This happens when the other person misinterprets the meaning behind your words. <br />
-                                In this instance, you are not 'in the wrong' and it would be inappropriate to apologize. <br />
-                                Rather, you use contrasting to clarify your meaning. <br />
-                                If you don't clarify your meaning then the other person may believe that your intention is to win the argument/ coerce them to accept your opinion, and they will no longer believe that you care about their
-                                goals, interests, and values (mutual purpose and respect are lost). <br />
-                                Rebuild mutual purpose by contrasting what you do mean with what you don’t mean.
-                                <br />
-                                <br />
-                                <i>What you don’t mean:</i> Address the other persons concerns that you have malicious intent or don’t respect them <br />
-                                <i>What you do mean:</i> Clarify your real purpose
-                            </p>
-                        </div>
-
-                        <div id="examplebox3">
-                            <b>Example</b><br />
-                            Your friend is visiting the UK who you haven't seen for a year, and so you plan to see them instead of seeing your mum that weekend.
-                            <br />
-                            While this is completely reasonable to do, your mother gets upset because she thinks you don't want to spend time with her. <br />
-                            Here, you wouldn't apologize, rather you would use contrasting to clarify that it is not that you don't want to see your mum, it is that you haven't seen this friend for a very long time and that this might be
-                            the only opportunity you have to see your friend for a year or two. <br />
-                            You haven't changed your plan to see your friend (you don't take back your actions), rather you have clarified your meaning. <br />
-                            You could then say to your mum you will come down the next weekend to see her, this way you are demonstrating your meaning is true (that it isn't that you don't want to see her) while not taking back your
-                            original plan of action.
-                        </div>
-                    </div>
-
-                    <h6 id="left2">CRIB</h6>
-                    <div class="box" id="box3">
-                        <p id="boxcontent">
-                            You might find yourself in the middle of a debate because you and the other person have different purposes (no mutual purpose). <br />
-                            Contrasting won’t do the trick here because you will be reinstating a goal that is not shared with the other person and it will therefore not restore mutual purpose. <br />
-                            Instead, you need to use <i>CRIB</i>.
-                        </p>
-                    </div>
-
-                    <div id="CRIBtext">
-                        <p id="CRIB">Commit</p>
-                        <p>to seeking a mutual purpose</p>
-                    </div>
-                    <p>You have to accept that your belief might not be the best one, your mind must be open to the possibility that there are better alternatives.</p>
-                    <div class="container" id="examplebox2">
-                        For example, you have just received a job offer from a company in another country and you are trying to convince your wife that it would be a good idea to move the family so that you can take the job. Ask yourself,
-                        before trying to coerce your wife to your idea, is that job for that particular company the only thing that's going to make you happy? Why that particular company? What makes them better than everyone else? Once you
-                        have opened your mind to alternative suggestions you can commit yourself to continue discussions until a mutual purpose is found.
-                    </div>
-                    <p>Commit to finding mutual purpose: "It seems we have a different opinion on this, how about we take no action on it until we have found a solution that suits us both?"</p>
-
-                    <div id="CRIBtext">
-                        <p id="CRIB">Recognise</p>
-                        <p>the purpose behind the strategy</p>
-                    </div>
-                    <p>
-                        We equate what we are asking for with what we want, but in reality, what we ask for is just a strategy to get what we want. You need to find out the reason behind the strategy: what it is the person wants, not what
-                        the person is asking for.
-                    </p>
-                    <div class="container" id="examplebox2">
-                        For example, Katie wants to go out for cocktails, but her partner Ben wants to stay in and watch a movie. These two activities are incompatible. Katie asks her partner why he wants to stay in and watch a movie, and
-                        he says he is tired and wants to have a chilled evening with her. The purpose behind Bens strategy is to have a chilled evening, and the purpose behind Katie's strategy is to get away from the kids for a bit. So why
-                        not find an activity that is both relaxing and is also away from the kids? While the activities are not compatible, the goals are. They could get sucked into arguing over which activity to do, but instead, they find
-                        out the purpose behind the strategy and then brainstorm ideas for activities that satisfy both their needs, such as a drive through movie night (which is relaxing, depending on the movie they choose, and it gets them
-                        away from the kids).
-                    </div>
-                    <p>Find out their purpose, ask them why they want what they are asking for, and use this understanding of the other persons wants/ needs to create a mutual purpose.</p>
-
-                    <div id="CRIBtext">
-                        <p id="CRIB">Invent</p>
-                        <p>a mutual purpose</p>
-                    </div>
-                    <p>
-                        Sometimes it may be that your goals aren't compatible; it may be that your wants cannot be served, except at the expense of the other person. In this case, you are going to need to a little creativity and invent a
-                        mutual purpose. To invent a mutual purpose you need to zoom out and look at longer-term goals to find a goal that is more meaningful than the goals that are diving the various sides apart.
-                    </p>
-                    <div class="container" id="examplebox2">
-                        For example, your partner has been offered a job that is located 3 hours away from where you both currently live. You want him to decline the job offer because if he accepts it he would have to move away, but he
-                        wants to accept it because he thinks he would enjoy the job and he likes the company. The short term goals are incompatible, but they can both agree on the long-term goal which is that the needs of their relationship
-                        come before career goals.
-                    </div>
-
-                    <div id="CRIBtext">
-                        <p id="CRIB">Brainstorm</p>
-                        <p>new strategies</p>
-                    </div>
-                    <p>
-                        Once a mutual purpose has been found or invented, safety will be restored and you can move back into dialogue and brainstorm new ideas that will meet the needs of everyone. It is important that everyone agrees on the
-                        final goal and works towards it because it will stop people from passively resisting the outcome.
+                <!-- Item 2 -->
+                <h4>Make it safe</h4>
+                <p>Once you've recognised the safety issues, make it safe.</p>
+                <h6 style="background: #1fbfa5;" class="bubbleword">Apologise</h6>
+                <div class="box" id="box1">
+                    <p class="boxcontent">
+                        <b>Apologize to take back your action that has offended them.</b> <br />
+                        Apologize sincerely if you have made a mistake that has hurt the other person. <br />
+                        When your behaviour has given someone clear cause to doubt your respect then the mutual respect will be lost. <br />
+                        You need to acknowledge your wrongdoing, give up winning, focus on what you really want, and give up a bit of your ego. <br />
+                        A sincere show of respect will help restore the mutual respect that has been lost. <br />
+                        Note that a 'but' after an apology isn't a genuine apology, by justifying/ excusing your actions you are displacing responsibility and being insincere. <br />
+                        <br />
+                        Apologizing is accepting your wrongdoing and taking back your actions, unlike contrasting which isn't used to take back what you have said or done but rather to clarify the meaning behind your words/ actions.
+                        <br />
                     </p>
                 </div>
-                <!-- end of widget container -->
-            </div>
-        </div>
-        <!-- end of third accordion -->
-    </div>
-    <!-- end of accordion wrapper -->
-</div>
-<!-- end of accordion container -->
-{% endblock content %} 
 
-{% block javascript %}
+                <h6 style="margin-left: auto; background: #eb7626;" class="bubbleword">Contrast</h6>
+                <div style="overflow: hidden;">
+                    <div class="box" id="box2">
+                        <p class="boxcontent">
+                            <b>Contrast to fix the misunderstanding.</b> <br />
+                            Sometimes people will be offended or upset even though you haven't done anything to cause such offence. <br />
+                            This happens when the other person misinterprets the meaning behind your words. <br />
+                            In this instance, you are not 'in the wrong' and it would be inappropriate to apologize. <br />
+                            Rather, you use contrasting to clarify your meaning. <br />
+                            If you don't clarify your meaning then the other person may believe that your intention is to win the argument/ coerce them to accept your opinion, and they will no longer believe that you care about their goals,
+                            interests, and values (mutual purpose and respect are lost). <br />
+                            Rebuild mutual purpose by contrasting what you do mean with what you don’t mean.
+                            <br />
+                            <br />
+                            <i>What you don’t mean:</i> Address the other persons concerns that you have malicious intent or don’t respect them <br />
+                            <i>What you do mean:</i> Clarify your real purpose
+                        </p>
+                    </div>
+
+                    <div id="examplebox3">
+                        <b>Example</b><br />
+                        Your friend is visiting the UK who you haven't seen for a year, and so you plan to see them instead of seeing your mum that weekend.
+                        <br />
+                        While this is completely reasonable to do, your mother gets upset because she thinks you don't want to spend time with her. <br />
+                        Here, you wouldn't apologize, rather you would use contrasting to clarify that it is not that you don't want to see your mum, it is that you haven't seen this friend for a very long time and that this might be the
+                        only opportunity you have to see your friend for a year or two. <br />
+                        You haven't changed your plan to see your friend (you don't take back your actions), rather you have clarified your meaning. <br />
+                        You could then say to your mum you will come down the next weekend to see her, this way you are demonstrating your meaning is true (that it isn't that you don't want to see her) while not taking back your original
+                        plan of action.
+                    </div>
+                </div>
+
+                <h6 style="background: #cc3d6a; clear: both; margin-top: 40px;" class="bubbleword">CRIB</h6>
+                <div class="box" id="box3">
+                    <p class="boxcontent">
+                        You might find yourself in the middle of a debate because you and the other person have different purposes (no mutual purpose). <br />
+                        Contrasting won’t do the trick here because you will be reinstating a goal that is not shared with the other person and it will therefore not restore mutual purpose. <br />
+                        Instead, you need to use <i>CRIB</i>.
+                    </p>
+                </div>
+
+                <div>
+                    <h5 class="CRIB">Commit</h5>
+                    <p>to seeking a mutual purpose</p>
+                </div>
+                <p>You have to accept that your belief might not be the best one, your mind must be open to the possibility that there are better alternatives.</p>
+                <div class="container" id="examplebox2">
+                    For example, you have just received a job offer from a company in another country and you are trying to convince your wife that it would be a good idea to move the family so that you can take the job. Ask yourself,
+                    before trying to coerce your wife to your idea, is that job for that particular company the only thing that's going to make you happy? Why that particular company? What makes them better than everyone else? Once you have
+                    opened your mind to alternative suggestions you can commit yourself to continue discussions until a mutual purpose is found.
+                </div>
+                <p>Commit to finding mutual purpose: "It seems we have a different opinion on this, how about we take no action on it until we have found a solution that suits us both?"</p>
+
+                <div>
+                    <h5 class="CRIB">Recognise</h5>
+                    <p>the purpose behind the strategy</p>
+                </div>
+                <p>
+                    We equate what we are asking for with what we want, but in reality, what we ask for is just a strategy to get what we want. You need to find out the reason behind the strategy: what it is the person wants, not what the
+                    person is asking for.
+                </p>
+                <div class="container" id="examplebox2">
+                    For example, Katie wants to go out for cocktails, but her partner Ben wants to stay in and watch a movie. These two activities are incompatible. Katie asks her partner why he wants to stay in and watch a movie, and he
+                    says he is tired and wants to have a chilled evening with her. The purpose behind Bens strategy is to have a chilled evening, and the purpose behind Katie's strategy is to get away from the kids for a bit. So why not
+                    find an activity that is both relaxing and is also away from the kids? While the activities are not compatible, the goals are. They could get sucked into arguing over which activity to do, but instead, they find out the
+                    purpose behind the strategy and then brainstorm ideas for activities that satisfy both their needs, such as a drive through movie night (which is relaxing, depending on the movie they choose, and it gets them away from
+                    the kids).
+                </div>
+                <p>Find out their purpose, ask them why they want what they are asking for, and use this understanding of the other persons wants/ needs to create a mutual purpose.</p>
+
+                <div>
+                    <h5 class="CRIB">Invent</h5>
+                    <p>a mutual purpose</p>
+                </div>
+                <p>
+                    Sometimes it may be that your goals aren't compatible; it may be that your wants cannot be served, except at the expense of the other person. In this case, you are going to need to a little creativity and invent a mutual
+                    purpose. To invent a mutual purpose you need to zoom out and look at longer-term goals to find a goal that is more meaningful than the goals that are diving the various sides apart.
+                </p>
+                <div class="container" id="examplebox2">
+                    For example, your partner has been offered a job that is located 3 hours away from where you both currently live. You want him to decline the job offer because if he accepts it he would have to move away, but he wants to
+                    accept it because he thinks he would enjoy the job and he likes the company. The short term goals are incompatible, but they can both agree on the long-term goal which is that the needs of their relationship come before
+                    career goals.
+                </div>
+                <br />
+                <div>
+                    <h5 class="CRIB">Brainstorm</h5>
+                    <p>new strategies</p>
+                </div>
+                <p>
+                    Once a mutual purpose has been found or invented, safety will be restored and you can move back into dialogue and brainstorm new ideas that will meet the needs of everyone. It is important that everyone agrees on the
+                    final goal and works towards it because it will stop people from passively resisting the outcome.
+                </p>
+            </div>
+            <!-- end of widget container -->
+        </div>
+    </div>
+    <!-- end of third accordion -->
+</div>
+<!-- end of accordion wrapper -->
+<!-- end of accordion container -->
+{% endblock content %} {% block javascript %}
 <script src="{{url_for('static', filename='se.js')}}" type="text/javascript"></script>
 {% endblock javascript %}
