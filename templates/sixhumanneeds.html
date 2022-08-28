@@ -1,283 +1,286 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} 
 
-  {% block header %}
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='shn.css')}}">
-  {% endblock header %}
-      
+{% block header %}
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='shn.css')}}" />
+{% endblock header %} 
 
-      {% block content %}
+{% block content %}
+<!-- INTRO -->
+<p id="undertitle">
+    Every human has six humans needs that influences their behaviour and decisions.
+</p>
+<p id="undertitledescription">
+    While we all have the same six needs, we can differ in the way we value each of these needs, and we can also differ in our beliefs about what it takes to meet each need. The way we go about meeting these needs can be divided into
+    resourceful and unresourceful appraoches. By being aware of these needs and how they might influence our behaviour, we can improve how ways we meet these needs by making decisions that support ourselves.
+</p>
 
- 
-            <!-- INTRO -->
-         <p id="undertitle">
-          Every human has six humans needs that influences their behaviour and decisions. 
-         </p>
-         <p id="undertitledescription">
-          While we all have the same six needs, we can differ in the way we value each of these needs, and we can also differ in our beliefs about what it takes to meet each need. 
-          The way we go about meeting these needs can be divided into resourceful and unresourceful appraoches.
-          By being aware of these needs and how they might influence our behaviour, we can improve how ways we meet these needs by making decisions that support ourselves.
-         </p>
-
-         <!--- MAIN CONTENT -->
+<!--- MAIN CONTENT -->
 <div id="maincontainer">
-  
-  <!--- HUMAN NEED ICONS -->
-  <div class="container">  
+    <!--- HUMAN NEED ICONS -->
+    <div class="container">
+        <div class="box" id="contribution" onclick="openNeed('CoContent')">
+            <p>Contribution</p>
+            <div id="imagecontainer">
+                <div class="img" id="contribution2"></div>
+            </div>
+        </div>
 
-  <div class="box" id="contribution" onclick="openNeed('CoContent')" >
-    <p>Contribution</p>  
-       <div id="imagecontainer">
-         <div class='img' id="contribution2"></div>
-       </div>  
+        <div class="box" id="certain" onclick="openNeed('CeContent')">
+            <p>Certainty</p>
+            <div id="imagecontainer">
+                <div class="img" id="certain2"></div>
+            </div>
+        </div>
+
+        <div class="box" id="love" onclick="openNeed('LoContent')">
+            <p>Love & connection</p>
+            <div id="imagecontainer">
+                <div class="img" id="love2"></div>
+            </div>
+        </div>
+
+        <div class="box" id="significance" onclick="openNeed('SiContent')">
+            <p>Significance</p>
+            <div id="imagecontainer">
+                <div class="img" id="significance2"></div>
+            </div>
+        </div>
+
+        <div class="box" id="growth" onclick="openNeed('GoContent')">
+            <p>Growth</p>
+            <div id="imagecontainer">
+                <div class="img" id="growth2"></div>
+            </div>
+        </div>
+
+        <div class="box" id="variety" onclick="openNeed('VaContent')">
+            <p>Positive variety & uncertainty</p>
+            <div id="imagecontainer">
+                <div class="img" id="variety2"></div>
+            </div>
+        </div>
+
+        <span class="stretch"></span>
+        <!-- For horizontally equally spread boxes -->
     </div>
+    <!-- ends of boxes-->
 
-  
+    <div id="content">
+        <!-- start of content that comes under boxes-->
 
-  <div class="box" id="certain"  onclick="openNeed('CeContent')">
-    <p>Certainty</p>  
-       <div id="imagecontainer">
-         <div class='img' id="certain2"></div>
-       </div>  
+        <div class="tabcontent" id="CoContent">
+            <div>
+                <h2>Contribution</h2>
+                <p style="text-align: center;">
+                    Give
+                    <br />
+                    Care <br />
+                    Protect <br />
+                    Serve others
+                </p>
+            </div>
+            <br />
+            <br />
+            <div id="left">
+                <h3>Resourceful ways to meet need</h3>
+                <p>
+                    Charitable work <br />
+                    Volunteering <br />
+                    Serving your community
+                </p>
+            </div>
+            <div id="right">
+                <h3>Unresourceful ways to meet need</h3>
+                <p>
+                    Giving all your income away
+                </p>
+            </div>
+        </div>
+
+        <div class="tabcontent" id="CeContent">
+            <div>
+                <h2>Certainty</h2>
+                <p style="text-align: center;">
+                    Order <br />
+                    Safety <br />
+                    Control <br />
+                    Comfort <br />
+                    Security <br />
+                    Stability <br />
+                    Avoid pain <br />
+                    Consistency <br />
+                    Predictability
+                </p>
+            </div>
+            <br />
+            <br />
+            <div id="left">
+                <h3>Resourceful ways to meet need</h3>
+                <p>
+                    Exercising <br />
+                    Always telling the truth (never lying) <br />
+                    Self-certainty- trusting yourself means you require less certainty from your environment (i.e. approval from friends), and you build confidence and self-worth in the process
+                </p>
+            </div>
+            <div id="right">
+                <h3>Unresourceful ways to meet need</h3>
+                <p>
+                    Getting angry <br />
+                    Smoking and drinking <br />
+                    Lowering your standards (everyone lets me down) <br />
+                    Staying in a role you don’t enjoy <br />
+                    Trying to control others <br />
+                    Procrastination (keeps you in the known, the comfort zone, so you don't have to cross into the unknown)
+                </p>
+            </div>
+        </div>
+
+        <div class="tabcontent" id="LoContent">
+            <div>
+                <h2>Love & connection</h2>
+                <p style="text-align: center;">
+                    Change <br />
+                    Loved <br />
+                    Unified <br />
+                    Connected <br />
+                    Family and friends <br />
+                    Approval and attachment
+                </p>
+            </div>
+            <br />
+            <br />
+            <div id="left">
+                <h3>Resourceful ways to meet need</h3>
+                <p>
+                    Buying a dog <br />
+                    Meditation <br />
+                    Praying <br />
+                    Self-reflection <br />
+                    Surrounding yourself with loving healthy relationships
+                </p>
+            </div>
+            <div id="right">
+                <h3>Unresourceful ways to meet need</h3>
+                <p>
+                    Pleasing everyone <br />
+                    Being needy <br />
+                    Rescuing others <br />
+                    Staying in an abusive or unsatisfying relationship because you fear being alone and disconnected
+                </p>
+            </div>
+        </div>
+
+        <div class="tabcontent" id="SiContent">
+            <div>
+                <h2>Significance</h2>
+                <p style="text-align: center;">
+                    Pride <br />
+                    Special <br />
+                    Needed <br />
+                    Wanted <br />
+                    Meaning <br />
+                    Authority <br />
+                    Uniqueness <br />
+                    Worthy of love <br />
+                    Sense of importance
+                </p>
+            </div>
+            <br />
+            <br />
+            <div id="left">
+                <h3>Resourceful ways to meet need</h3>
+                <p>
+                    Self-leadership <br />
+                    Volunteer work <br />
+                    Achieving a goal/something special <br />
+                    Speaking up
+                </p>
+            </div>
+            <div id="right">
+                <h3>Unresourceful ways to meet need</h3>
+                <p>
+                    Putting other people down <br />
+                    Gossiping <br />
+                    Relating sad stories about yourself <br />
+                    Judging other people <br />
+                    Violence <br />
+                    Being a martyr/victim/rebelling
+                </p>
+            </div>
+        </div>
+
+        <div class="tabcontent" id="GoContent">
+            <div>
+                <h2>Growth</h2>
+                <p style="text-align: center;">
+                    Learn <br />
+                    Change <br />
+                    Improve <br />
+                    Development
+                </p>
+            </div>
+            <br />
+            <br />
+            <div id="left">
+                <h3>Resourceful ways to meet need</h3>
+                <p>
+                    Personal development <br />
+                    Expanding and deepening self <br />
+                    Contributing to self and others
+                </p>
+            </div>
+            <div id="right">
+                <h3>Unresourceful ways to meet need</h3>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="tabcontent" id="VaContent">
+            <div>
+                <h2>Positive variety & uncertainty</h2>
+                <p style="text-align: center;">
+                    Change <br />
+                    Novelty <br />
+                    Surprise <br />
+                    Challenge <br />
+                    Difference <br />
+                    Adventure
+                </p>
+            </div>
+            <br />
+            <br />
+            <div id="left">
+                <h3>Resourceful ways to meet need</h3>
+                <p>
+                    Learning something new <br />
+                    Taking on a new goal or challenge <br />
+                    Stepping outside of your comfort zone <br />
+                    Establishing new connections and relationships <br />
+                    Taking on a new project
+                </p>
+            </div>
+            <div id="right">
+                <h3>Unresourceful ways to meet need</h3>
+                <p>
+                    Doing drugs <br />
+                    Changing jobs frequently <br />
+                    Creating drama <br />
+                    Changing partners
+                </p>
+            </div>
+        </div>
     </div>
-
-  
-
-  <div class="box" id="love" onclick="openNeed('LoContent')" >
-    <p>Love & connection</p>  
-       <div id="imagecontainer">
-         <div class='img' id="love2"></div>
-       </div>  
-    </div>
-
-  
-
-  <div class="box" id="significance" onclick="openNeed('SiContent')">
-    <p>Significance</p>  
-       <div id="imagecontainer">
-         <div class='img' id="significance2"></div>
-       </div>  
-    </div>
-
-  
-
-  <div class="box" id="growth" onclick="openNeed('GoContent')">
-    <p>Growth</p>  
-       <div id="imagecontainer">
-         <div class='img' id="growth2"></div>
-       </div>  
-    </div>
-
-  
-
-  <div class="box" id="variety" onclick="openNeed('VaContent')">
-    <p>Positive variety & uncertainty</p>  
-       <div id="imagecontainer">
-         <div class='img' id="variety2"></div>
-       </div>  
-    </div>
-
-
-
- <span class="stretch"></span> <!-- For horizontally equally spread boxes -->
- </div>  <!-- ends of boxes-->
- 
-
-
-   <div id="content">  <!-- start of content that comes under boxes-->
-   
-  
-<div class="tabcontent" id="CoContent">
-  <div>   
-   <h2>Contribution</h2>
-   <p style="text-align: center;">
-       Give
-   <br>Care 
-   <br>Protect
-   <br>Serve others
-   </p>
-  </div>
-<br>
-<br>
-  <div id="left">
-   <h3>Resourceful ways to meet need</h3> 
-   <p>Charitable work
-   <br>Volunteering 
-   <br>Serving your community</p>
-  </div>
-  <div id="right">
-   <h3>Unresourceful ways to meet need</h3>
-   <p>
-      Giving all your income away
-    </p>
-  </div>
+    <!-- End of content container -->
 </div>
+<!-- end of main container -->
 
-<div class="tabcontent" id="CeContent">
-  <div>   
-   <h2>Certainty</h2>
-   <p style="text-align: center;">Order
-   <br>Safety 
-   <br>Control
-   <br>Comfort
-   <br>Security
-   <br>Stability
-   <br>Avoid pain
-   <br>Consistency
-   <br>Predictability</p>
-  </div>
-<br>
-<br>
-  <div id="left">
-   <h3>Resourceful ways to meet need</h3> 
-   <p>Exercising
-   <br>Always telling the truth (never lying)
-   <br>Self-certainty- trusting yourself means you require less certainty from your environment (i.e. approval from friends), and you build confidence and self-worth in the process</p>
-  </div>
-  <div id="right">
-   <h3>Unresourceful ways to meet need</h3> 
-   <p>Getting angry
-   <br>Smoking and drinking
-   <br>Lowering your standards (everyone lets me down)
-   <br>Staying in a role you don’t enjoy 
-   <br>Trying to control others 
-   <br>Procrastination (keeps you in the known, the comfort zone, so you don't have to cross into the unknown)</p>
-  </div>
-</div>
+<p style="text-align: right;">Info credit @ Anthony Robbins</p>
 
-
-<div class="tabcontent" id="LoContent">
-  <div>   
-   <h2>Love & connection</h2>
-   <p style="text-align: center;">Change
-   <br>Loved
-   <br>Unified
-   <br>Connected
-   <br>Family and friends
-   <br>Approval and attachment</p>
-  </div>
-<br>
-<br>
-  <div id="left">
-   <h3>Resourceful ways to meet need</h3> 
-   <p>Buying a dog
-   <br>Meditation 
-   <br>Praying
-   <br>Self-reflection
-   <br>Surrounding yourself with loving healthy relationships</p>
-  </div>
-  <div id="right">
-   <h3>Unresourceful ways to meet need</h3> 
-   <p>Pleasing everyone
-   <br>Being needy 
-   <br>Rescuing others 
-   <br>Staying in an abusive or unsatisfying relationship because you fear being alone and disconnected </p> 
-  </div>
-</div>
-
-<div class="tabcontent" id="SiContent">
-  <div >   
-   <h2>Significance</h2>
-   <p style="text-align: center;">Pride
-   <br>Special
-   <br>Needed
-   <br>Wanted
-   <br>Meaning
-   <br>Authority
-   <br>Uniqueness
-   <br>Worthy of love
-   <br>Sense of importance</p>
-  </div>
-<br>
-<br>
-  <div id="left">
-   <h3>Resourceful ways to meet need</h3> 
-   <p>Self-leadership
-   <br>Volunteer work
-   <br>Achieving a goal/something special
-   <br>Speaking up
-   </p>
-  </div>
-  <div id="right">
-   <h3>Unresourceful ways to meet need</h3> 
-   <p>Putting other people down
-   <br>Gossiping
-   <br>Relating sad stories about yourself
-   <br>Judging other people 
-   <br>Violence
-   <br>Being a martyr/victim/rebelling
-   </p> 
-  </div>
-</div>
-
-
-<div class="tabcontent" id="GoContent">
-  <div>   
-   <h2>Growth</h2>
-   <p style="text-align: center;">Learn
-   <br>Change
-   <br>Improve
-   <br>Development
-   </p>
-  </div>
-<br>
-<br>
-  <div id="left">
-   <h3>Resourceful ways to meet need</h3> 
-   <p>Personal development 
-   <br>Expanding and deepening self 
-   <br>Contributing to self and others </p>
-  </div>
-  <div id="right">
-   <h3>Unresourceful ways to meet need</h3> <p>
-   </p> 
-  </div>
-</div>
-
-<div class="tabcontent" id="VaContent">
-   <div>   
-    <h2>Positive variety & uncertainty</h2>
-   <p style="text-align: center;">Change
-   <br>Novelty
-   <br>Surprise
-   <br>Challenge
-   <br>Difference
-   <br>Adventure</p>
-  </div>
-<br>
-<br>
-  <div id="left">
-   <h3>Resourceful ways to meet need</h3> <p>Learning something new
-   <br>Taking on a new goal or challenge
-   <br>Stepping outside of your comfort zone
-   <br>Establishing new connections and relationships
-   <br>Taking on a new project</p>
-  </div>   
-  <div id="right">
-   <h3>Unresourceful ways to meet need</h3> <p>Doing drugs
-   <br>Changing jobs frequently
-   <br>Creating drama 
-   <br>Changing partners</p> 
-  </div>
-</div>
-
-
-   </div> <!-- End of content container -->
-  
- </div> <!-- end of main container -->
- 
- 
- 
- <p style="text-align: right;">Info credit @ Anthony Robbins </p>
-
-
-
-
-
-
-{% endblock content %}
-
+{% endblock content %} 
 
 {% block javascript %}
-  <script src="https://code.jquery.com/jquery-latest.min.js"></script> <!-- jQuery-->
-  <script src="{{url_for('static', filename='shn.js')}}" type="text/javascript"></script>
+<!-- jQuery-->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+<script src="{{url_for('static', filename='shn.js')}}" type="text/javascript"></script>
 {% endblock javascript %}

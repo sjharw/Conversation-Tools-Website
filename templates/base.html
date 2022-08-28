@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html>
-
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='base.css')}}">
-        {% block header %}
-        {% endblock header %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='base.css')}}" />
+        {% block header %} {% endblock header %}
     </head>
-      
-      
+
     <body>
-      
         <!-- Nav bar -->
         <div class="wrapper" id="nav">
-            <span onclick="openNav()" id="nav-menu">&#9776; Menu</span> <!-- Menu button -->
-                <div id="mySidenav" class="sidenav">
+            <!-- Menu button -->
+            <span onclick="openNav()" id="nav-menu">&#9776; Menu</span>
+            <div id="mySidenav" class="sidenav">
                 <a id="cross" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a class ="link" href="{{url_for('sp')}}">Shared pool</a>
-                <a class ="link" href="{{url_for('se')}}">Safe environment</a>
-                <a class ="link" href="{{url_for('ha')}}">Hidden agendas</a>
-                <a class ="link" href="{{url_for('shn')}}">Human needs</a>
-                </div>
+                <a class="link" href="{{url_for('sp')}}">Shared pool</a>
+                <a class="link" href="{{url_for('se')}}">Safe environment</a>
+                <a class="link" href="{{url_for('ha')}}">Hidden agendas</a>
+                <a class="link" href="{{url_for('shn')}}">Human needs</a>
+            </div>
         </div>
 
-        {% block content %}
-        {% endblock content %}
-
-
+        {% block content %} {% endblock content %}
     </body>
 
     <script src="{{url_for('static', filename='base.js')}}" type="text/javascript"></script>
-    {% block javascript %}
-    {% endblock javascript %}
-
+    {% block javascript %} {% endblock javascript %}
 </html>
