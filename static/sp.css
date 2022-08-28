@@ -10,8 +10,6 @@ body {
   overflow-y: scroll; /* this ensures y scroll bar if needed */
 } 
 
-
-
 /* --- SEMI-TRANSPARENT BOX--- */
 
 #opaquebox{
@@ -19,26 +17,6 @@ body {
   width: 90%;
   margin: auto;
 }
-
-#boxcontents {
-  font-size: 20px; 
-  padding: 40px;
-}
-
-/* --- END OF SEMI-TRANSPARENT BOX--- */
-
-
-/* Bold text */
-strong { 
-  font-weight: 900;
-  font-size: 25px;
-}
-
-
-
-
-
-
 
 
 
