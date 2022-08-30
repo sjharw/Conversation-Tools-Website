@@ -1,30 +1,16 @@
-:: LOOK INTO POETRY ::
+:: Drop old env
+call conda deactivate
+call conda env remove --name web-app
 
+:: Create conda work env
+:: .yml file contains list of dependencies that your project relies on
+call conda env create --name web-app --file environment.yml
 
-::--------- Open Git Bash terminal to run each line seperately --------------::
-:: What version of Python?
-:: python -V
+:: Update conda
+call conda update -n base -c defaults conda
 
-:: install pip for installing python libraries
-:: python3 install pip
-:: python3 -m pip install --upgrade pip
+:: Activate work rnv
+call conda activate web-app
 
-:: install virtualenv for setting up virtual environment
-:: python3 -m pip install virtualenv
-
-:: create new work environment
-:: in Python 3.9, immediately upgrade the pip/setuptools versions after creating an environment with "--upgrade-deps"
-:: no need to install venv, it comes packed with python installation
-python3 -m venv webapp --upgrade-deps 
-
-:: activate environment
-.\webapp\Scripts\activate
-::source webapp/bin/activate
-
-:: install dependencies (libraries)
-python3 -m pip install -r requirements.txt
-:: this gives error at packages=setup.find_packages(), AttributeError: 'function' object has no attribute 'find_packages'
-
-:: install jupyterlab (for notebooks)
-python3 -m pip install jupyterlab
-:: this isn't installing jupyterlab to webapp virtual env
+:: Install dependencies listed in requirements.txt
+call python -m pip install -r requirements.txt
