@@ -1,0 +1,56 @@
+{% extends 'base.html' %} 
+
+{% block header %}
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='sp.css')}}" />
+{% endblock header %} 
+
+{% block content %}
+<!-- Page title -->
+<div class="header">
+    <h1>Shared Pool of Meaning</h1>
+</div>
+
+<!-- Intro -->
+<p style="text-align: center;">
+    Everyone has their own opinions, feelings, theories, and experiences about the topic at hand, which makes up their own personal pool of meaning.
+</p>
+
+<div class="main">
+    <div class="w3-container" id="opaquebox">
+        <div style="padding: 40px;">
+            <p>To create a shared pool of meaning everyone must feel free to talk openly about their thoughts and feelings.</p>
+            <br />
+            <h5>Why create a shared pool of meaning?</h5>
+            <ol type="1">
+                <li>Better outcome</li>
+                <p>The more people contributing their IQ to the pool the smarter the decision</p>
+                <li>Improves commitment to the final decision</li>
+                <p>
+                    People will be more invested in the outcome and more inclined to pull through on it if they can understand the path that has been taken to get to the outcome and have been able to contribute their own thoughts and ideas.
+                    Those left out of the shared pool are rarely committed to the final decision and can end up quietly criticizing and passively resisting the outcome.
+                    <li>Widens your personal pool of meaning</li>
+
+                Other peoples ideas and theories can widen your perspective on the topic at hand, therefore expanding your own personal pool of meaning.</p>
+            </ol>
+
+            <br />
+
+            <h5>How do you create a shared pool of meaning?</h5>
+            <p>
+                Create a <a href="{{url_for('se')}}">safe environment</a> by having clear motives. You can learn about ulterior motives <a href="{{url_for('ha')}}">here</a>, and find out about the human needs that might be driving these
+                motives <a href="{{url_for('shn')}}">here</a>.
+            </p>
+        </div>
+        <!-- boxcontents -->
+    </div>
+    <!-- opaquebox -->
+
+    <br />
+</div>
+<!-- main-->
+
+{% endblock content %} 
+
+{% block javascript %}
+<script src="{{url_for('static', filename='sp.js')}}" type="text/javascript"></script>
+{% endblock javascript %}

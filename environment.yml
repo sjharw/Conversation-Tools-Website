@@ -1,0 +1,8 @@
+name: web-app
+channels:
+- conda-forge
+- anaconda
+- defaults
+dependencies:
+- pip
+- python

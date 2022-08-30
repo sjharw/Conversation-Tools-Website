@@ -1,0 +1,234 @@
+/* --- BACKGROUND --- */
+body {
+  background-color: lightseagreen; /* background style */
+ }
+
+/*--- MAIN CONTENTS --- */
+
+.div{
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+#maincontainer{
+  padding: 20px 100px 70px 100px;
+  text-align: justify; /* To evenly distribute boxes horizontally across page */
+  -ms-text-justify: distribute-all-lines; 
+  text-justify: distribute-all-lines;
+  min-width: 960px;
+  margin: 0px;
+}
+
+h2 {
+ color: #111; 
+ font-family: 'Helvetica Neue', sans-serif; 
+ font-size: 100px;
+ font-weight: bold;
+ letter-spacing: -1px;
+ line-height: 1; 
+ text-align: center; 
+ padding-top: 40px;
+}
+
+/* --- NEED BOXES --- */
+
+/* To evenly distribute boxes horizontally across page */
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.need-box {
+  text-align: center;
+  border: 12px solid #ff99ff;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  width: 170px;
+  height: 170px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; /* box size stays same but contents shrink as padding added, you therefore know width of box will be 230px */
+  /* To evenly distribute boxes horizontally across page */
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  /* Box moves downwards on hover */
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+/* Need box moves downwards on hover */
+.need-box:hover {
+  top: -10px;
+}
+
+/*Need box text */
+.need-box p {
+  margin-top: 10px;
+}
+
+/* Need box colours */
+#VaContent{
+  background-color: #e98074;
+}
+
+#CoContent {
+  background-color: #7491e9;
+}
+
+#CeContent {
+  background-color: #a8d166;
+}
+
+#LoContent {
+  background-color: #a574e9;
+}
+
+#SiContent {  
+  background-color: #74e984;
+}
+
+#GoContent{
+  background-color: #d6cd4b;
+}
+
+#VaContent{
+  background-color: #e98074;
+}
+
+
+
+/* --- IMAGE --- */
+.imagecontainer{
+  padding: 3px; 
+  width: 70px;
+  height: 70px;
+  top: 0;
+  margin: 0 auto; /* align horizontally middle */
+}
+
+ .img {
+  height: 100%;
+  background-position: center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-repeat: no-repeat;
+}
+
+/* Image colours */
+#love{
+  background-color: #a574e9;
+}
+
+#love2{
+    background-image:url('Images/heart.png');  
+}
+
+#love:hover .img{
+  background-image:url('Images/heart_grow.png');  
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
+
+
+#certain{
+  background-color: #a8d166;
+}
+
+#certain2{
+    background-image:url('Images/lock_open.png');  
+}
+
+#certain:hover .img{
+  background-image:url('Images/lock_closed.png');  
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
+
+#contribution {
+  background-color:#7491e9;
+}
+
+#contribution2{
+  background-image:url('Images/hand_less.png'); 
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out; 
+}
+
+#contribution:hover .img{
+  background-image:url('Images/hand.png');    
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
+
+#significance{
+  background-color:#74e984;
+}
+
+#significance2{
+  background-image:url('Images/crown.png'); 
+}
+
+#significance:hover .img{
+  background-image:url('Images/crown_big.png'); 
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;  
+}
+
+#growth{
+  background-color:#d6cd4b;
+}
+
+#growth2{
+    background-image:url('Images/plant.png');  
+}
+
+#growth:hover .img{
+  background-image:url('Images/plant_grow.png');   
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out; 
+}
+
+#variety{
+  background-color:#e98074;
+}
+
+#variety2{
+    background-image:url('Images/plane1a.png');  
+}
+
+#variety:hover .img{
+  background-image:url('Images/plane2b.png'); 
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;   
+}
+
+.tabcontent {
+  text-align:center;
+  padding: 30px;
+  font-family: 'Helvetica Neue', sans-serif; 
+  letter-spacing: 1px;
+}
+
+.tabcontent > h2 {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.tabcontent > div > div > h3 {
+  font-size: 23px;
+  color: white;
+  padding-bottom: 5px;
+}
