@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
 
+{% block header %}
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='home.css')}}" />
+{% endblock header %} 
+
 {% block content %}
 <!-- Home page -->
 <div style="width:80%; margin: auto; padding-top: 30px;">
 <p style="text-align: left;">
-    Welcome to my website on Conversation Tools. The information provided by this website is based of interpretations on the Crucial series: a series of books outlining methods for effectively dealing with difficult conversations.
+    Welcome to my website on Conversation Tools. The information provided by this website is based on interpretations of the Crucial series: a series of books outlining methods for effectively dealing with difficult conversations.
     <br>
     <br>
     Please have a browse of the different pages under the 'Pages' dropdown link in the navbar menu.
